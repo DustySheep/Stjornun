@@ -19,6 +19,7 @@
             'csrfToken' => csrf_token(),
         ]); ?>
     </script>
+    {!! MaterializeCSS::include_full() !!}
 </head>
 <body>
     <nav class="navbar navbar-default navbar-static-top">
