@@ -11,20 +11,17 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index', function(){
+    return view::Make('pages.home');
 });
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index');
-
-Route::get('/', [
-    'middleware' => ['auth'],
-    'uses' => function () {
-        echo "You are allowed to view this page!";
-    }]);
+Route::get('/', function () {
+                if(Auth::guest()){
+                    return view('auth.login');
+                }else{
+                    return view('pages.home');
+                }
+});

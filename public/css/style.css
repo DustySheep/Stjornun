@@ -1,0 +1,27 @@
+.navbar {
+    height: 0;
+}
+
+.navbar-default {
+    background-color: #90caf9;
+}
+
+.navbar-default .navbar-brand {
+    color: #f3f3f3;
+}
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-text {
+    color: #f3f3f3;
+}
+input:focus{
+    border-bottom:0 !important;
+}
+.btn, .btn-large, .btn:hover, .btn-large:hover{
+    background-color:#64b5f6;
+}
+
+[type="checkbox"].filled-in:checked+label:after{
+    border-color:#64b5f6;
+    background-color:#64b5f6;
+
+}

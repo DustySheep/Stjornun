@@ -1,4 +1,3 @@
-
 window._ = require('lodash');
 
 /**
@@ -24,7 +23,7 @@ require('vue-resource');
  * the outgoing requests issued by this application. The CSRF middleware
  * included with Laravel will automatically verify the header's value.
  */
-
+/* **************************************************************************************
 Vue.http.interceptors.push((request, next) => {
     request.headers['X-CSRF-TOKEN'] = Laravel.csrfToken;
 
